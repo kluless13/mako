@@ -1,0 +1,12 @@
+{
+    "canisters": {
+        "mako": {
+            "type": "custom",
+            "build": "python -m kybra mako src/main.py src/main.did",
+            "post_install": ".kybra/mako/post_install.sh",
+            "candid": "src/main.did",
+            "wasm": ".kybra/mako/mako.wasm",
+            "gzip": true
+        }
+    }
+}
